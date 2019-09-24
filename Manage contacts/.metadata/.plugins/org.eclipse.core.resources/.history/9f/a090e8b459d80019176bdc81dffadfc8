@@ -1,0 +1,27 @@
+package com.testapp.crm.service;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.testapp.crm.dao.ContactDao;
+import com.testapp.crm.model.Contact;
+import com.testapp.crm.repository.ContactRepository;
+
+@Service
+public class ContactServiceImpl implements ContactService{
+
+
+	@Autowired
+	private ContactDao userDao;
+	
+	//@Autowired
+	//ContactRepository contactRepository;
+
+	@Override
+	public List<Contact> getContacts() {
+		return null;//contactRepository.getContacts();
+	}
+
+}

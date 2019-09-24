@@ -1,0 +1,21 @@
+insert into contact
+values(10001, 'Ludvig', 'Beethoven', 'ludvig.beethoven@fifth.com', '0715214545', '123 Music Street', 'Classic Area', 'Symphony', 'SY21 1SE');
+insert into contact 
+values(10002,'Wolfgang', 'Mozart', 'w.a.mozart@gmail.com', '071521905', '123 Music Street', '', 'Viena', 'VI21 1SE');
+insert into contact (id, firstName, lastName, emailAddress)
+values(10003,'Vincent', 'Van Gogh', 'vangogh.v@sunflowers.com');
+
+insert into activitytype 
+values(10001, 'Call');
+insert into activitytype 
+values(10002, 'Email');
+insert into activitytype
+values (10003, 'Meeting');
+
+
+insert into activity
+values (1000, null, 'x', 'x', '2019-09-17', null);
+--insert into activity
+--values (1001, 10003, 'x', 'x', '2019-09-17', 10003);
+insert into activity 
+values(10001,10001, 'Called regarding symphony', 'Discussion about the best way to proceed with the overture.', '2019-09-17', null)

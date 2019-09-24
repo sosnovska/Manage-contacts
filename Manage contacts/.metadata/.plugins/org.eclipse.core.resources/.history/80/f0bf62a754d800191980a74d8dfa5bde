@@ -1,0 +1,5 @@
+package com.testapp.crm;
+
+public class BeanConfig {
+
+}

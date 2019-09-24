@@ -1,0 +1,13 @@
+package com.testapp.crm.model;
+
+public class Contact {
+
+	public String firstName;
+	public String lastName;
+	public String emailAddress;
+	public String telephoneNumber;
+	public String address1;
+	public String address2;
+	public String city;
+	public String postCode;
+}

@@ -1,0 +1,10 @@
+package com.testapp.crm.repository;
+
+import org.springframework.data.repository.CrudRepository;
+
+import com.testapp.crm.model.Activity;
+import com.testapp.crm.model.ActivityType;
+
+public interface ActivityTypeRepository extends CrudRepository<ActivityType, Long> {
+
+}

@@ -1,0 +1,9 @@
+package com.testapp.crm.dao;
+
+import java.util.List;
+
+import com.testapp.crm.model.Contact;
+
+public interface ContactDao {
+	public List<Contact> getContacts();
+}

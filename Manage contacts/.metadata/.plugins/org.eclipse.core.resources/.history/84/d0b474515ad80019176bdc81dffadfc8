@@ -1,0 +1,2 @@
+insert into contact
+values(10001,'Ludvig', 'Beethoven', 'ludvig.beethoven@fifth.com', '0715214545', '123 Music Street', 'Classic Area', 'Symphony', 'SY21 1SE');

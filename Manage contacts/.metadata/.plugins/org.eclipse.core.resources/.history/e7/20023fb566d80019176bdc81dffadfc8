@@ -1,0 +1,15 @@
+package com.testapp.crm.service;
+
+import java.util.List;
+
+import com.testapp.crm.model.Contact;
+
+public interface ContactService {
+
+	public List<Contact> getContacts();
+
+	public Contact getContactById(Long id);
+
+	int createContact(Contact contact);
+
+}

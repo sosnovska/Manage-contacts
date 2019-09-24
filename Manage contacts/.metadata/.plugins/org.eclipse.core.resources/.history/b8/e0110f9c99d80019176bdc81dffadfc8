@@ -1,0 +1,43 @@
+package com.testapp.crm.model;
+
+import java.util.List;
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.FetchType;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.OneToMany;
+
+@Entity
+public class Contact {
+
+	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	private Long id;
+	
+	@Column(name = "firstname")
+	private String firstName;
+	
+	@Column(name = "lastname")
+	private String lastName;
+	
+	@Column(name = "emailaddress")
+	private String emailAddress;
+	
+	@Column(name = "telephonenumber")
+	private String telephoneNumber;
+	
+	private String address1;
+	
+	private String address2;
+	
+	private String city;
+	
+	@Column(name = "postcode")
+	private String postCode;
+	
+	@OneToMany(targetEntity=Activity.class, mappedBy="contact", fetch=FetchType.EAGER)
+	private List<Activity> activities;
+}

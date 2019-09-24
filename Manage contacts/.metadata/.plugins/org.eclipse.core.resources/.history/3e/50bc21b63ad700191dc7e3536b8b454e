@@ -1,0 +1,16 @@
+package controller;
+
+import java.util.List;
+
+import org.springframework.stereotype.Controller;
+
+import model.Contact;
+
+@Controller
+public class ContactController {
+
+	@RequestMapping("/contacts")
+	public List<Contact> getContacts() {
+
+	}
+}

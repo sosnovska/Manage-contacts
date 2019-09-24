@@ -1,0 +1,11 @@
+package com.testapp.crm.service;
+
+import com.testapp.crm.model.ActivityType;
+import com.testapp.crm.model.Contact;
+
+public interface ActivityTypeService {
+
+	public Iterable<ActivityType> findAll();
+
+	
+}

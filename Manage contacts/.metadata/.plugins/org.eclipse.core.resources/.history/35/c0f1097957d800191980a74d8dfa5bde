@@ -1,0 +1,12 @@
+package com.testapp.crm.repository;
+
+import java.util.List;
+
+import org.springframework.stereotype.Repository;
+
+import com.testapp.crm.model.Contact;
+
+@Repository
+public interface ContactRepository {
+	public List<Contact> getContacts();
+}

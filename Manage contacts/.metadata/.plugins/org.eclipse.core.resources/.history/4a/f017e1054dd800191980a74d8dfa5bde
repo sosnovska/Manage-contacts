@@ -1,0 +1,29 @@
+package com.testapp.crm.controller;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.testapp.crm.model.Contact;
+import com.testapp.crm.service.ContactService;
+import com.testapp.crm.service.ContactServiceImpl;
+
+@RestController
+public class ContactController {
+
+	@Autowired
+	ContactService contactService;
+
+	@RequestMapping("/contacts")
+	public String getContacts() {
+		return "ABC";
+	}
+
+	@RequestMapping("/")
+	public String index() {
+		return "Greetings from Spring Boot!";
+	}
+}
