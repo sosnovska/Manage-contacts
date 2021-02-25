@@ -1,7 +1,0 @@
-package com.testapp.crm.model;
-
-public class ActivityType {
-
-	public String activityType;
-	
-}

@@ -1,7 +1,0 @@
-package model;
-
-public class ActivityType {
-
-	public String activityType;
-	
-}

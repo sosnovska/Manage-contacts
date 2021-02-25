@@ -1,0 +1,10 @@
+package com.sosnovska.managecontacts.service;
+
+import com.testapp.crm.model.ActivityType;
+
+public interface ActivityTypeService {
+
+	public Iterable<ActivityType> findAll();
+
+	
+}
